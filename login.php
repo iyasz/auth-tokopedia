@@ -125,6 +125,14 @@
         color: #31353b;
     }
 
+    .google:hover {
+        color: #31353b;
+    }
+
+    .google:active {
+        color: #31353b !important;
+    }
+
     /* .button-login:active:hover:not([disabled]) {
         cursor: no-drop;
     }
@@ -164,13 +172,13 @@
                             <button class="btn btn-primary mt-2 w-100 fw-bold button-login py-2 rounded-3">Selanjutnya</button>
                             <div class="text-gray d-flex align-items-center lnHR mb-1">
                                 <span class="lineHorizontal"></span>
-                                <p class=" fs-log1 text-center w-50">atau masuk dengan</p>
+                                <p class=" fs-log1 text-center w-50 letter-login">atau masuk dengan</p>
                                 <span class="lineHorizontal"></span>
                             </div>
                         </div>
-                        <div class="">
+                        <div class="mb-3">
                             <a class="btn btn-primary w-100 bg-transparent allMethod QR fw-semibold" href=""><img src="qr-code-scan.svg" class="pe-1"> Scan Kode QR</a>
-                            <a class="btn btn-primary w-100 bg-transparent allMethod google fw-semibold mt-2" href=""><img src="qr-code-scan.svg" class="pe-1"> Google</a>
+                            <a class="btn btn-primary w-100 bg-transparent allMethod google fw-semibold mt-2 " href=""><img src="googleicon.svg" width="22px" class="pe-1"> Google</a>
                         </div>
                     </div>
                 </div>
