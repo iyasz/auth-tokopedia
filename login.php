@@ -27,8 +27,8 @@
         }
 
         .card-lg {
-            width: 85%;
-            margin-left: 7%;
+            width: 82%;
+            margin-left: 10%;
 
         }
     }
@@ -37,8 +37,8 @@
 
         .card-lg {
             box-shadow: none !important;
-
         }
+
     }
 
     .card-login {
@@ -65,10 +65,10 @@
     }
 
     .lineHorizontal {
-        border: 0.7px solid rgba(0, 0, 0, 0.15) !important;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.15);
         width: 31%;
         position: relative;
-        top: -7px;
+        top: -6px;
     }
 
     .lnHR {
@@ -163,7 +163,7 @@
             </div>
         </div>
         <div class="row justify-content-center">
-            <div class=" col-12 col-md-9 col-lg-4  ">
+            <div class=" col-12 col-md-7 col-lg-4  ">
                 <div class="card  card-login card-lg shadow-style border-0">
                     <div class="card-body mx-3">
                         <div class="header d-flex align-items-center my-4">
@@ -180,7 +180,7 @@
                             <button class="btn btn-primary mt-2 w-100 fw-bold button-login py-2 rounded-3">Selanjutnya</button>
                             <div class="text-gray d-flex align-items-center lnHR mb-1">
                                 <span class="lineHorizontal"></span>
-                                <p class=" fs-log1 text-center w-50 letter-login">atau masuk dengan</p>
+                                <p class=" fs-log1 text-center w-50 letter-login mx-lg-3 mx-md-0 mx-0">atau masuk dengan</p>
                                 <span class="lineHorizontal"></span>
                             </div>
                         </div>
