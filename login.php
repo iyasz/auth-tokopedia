@@ -27,12 +27,27 @@
         }
 
         .card-lg {
-            /* width: 360px; */
+            width: calc(80% + 5px);
+            margin-left: 12%;
+
         }
     }
 
+    .card-login {
+        position: relative;
+        top: 43px;
+    }
+
     .textLinkGreen {
-        color: rgb(3, 172, 14) !important;
+        color: rgb(3, 154, 14) !important;
+    }
+
+    .text-blackToGray {
+        color: #31353b;
+    }
+
+    .letter-login {
+        letter-spacing: -0.8px;
     }
 
     .shadow-style {
@@ -42,8 +57,10 @@
     }
 
     .lineHorizontal {
-        border: 0.7px solid rgba(0, 0, 0, 0.20) !important;
+        border: 0.7px solid rgba(0, 0, 0, 0.15) !important;
         width: 31%;
+        position: relative;
+        top: -7px;
     }
 
     .lnHR {
@@ -56,37 +73,104 @@
     }
 
     .text-gray {
-        color: rgba(0, 0, 0, 0.54) !important;
+        color: rgba(0, 0, 0, 0.45) !important;
     }
+
+    .input-login:focus {
+        box-shadow: none;
+        outline: none;
+        border-color: rgb(3, 230, 10);
+    }
+
+    .button-login {
+        background-color: #E5E7E9 !important;
+        border: 0;
+        color: #757575 !important;
+    }
+
+    .button-login:hover {
+        cursor: no-drop;
+    }
+
+    .button-login:active {
+        cursor: no-drop;
+        background-color: #d7d7d7 !important;
+    }
+
+    .allMethod {
+        border-color: #E5E7E9;
+    }
+
+    .allMethod:hover {
+        border-color: #E5E7E9;
+    }
+
+    .allMethod:active {
+        border-color: #d7d7d7 !important;
+    }
+
+    .QR {
+        color: #757575;
+    }
+
+    .QR:hover {
+        color: #757575;
+    }
+
+    .QR:active {
+        color: #757575 !important;
+    }
+
+    .google {
+        color: #31353b;
+    }
+
+    /* .button-login:active:hover:not([disabled]) {
+        cursor: no-drop;
+    }
+
+    .button-login:hover:disabled {
+        cursor: no-drop;
+    }
+
+    .button-login:active:disabled {
+        background-color: red !important;
+    } */
 </style>
 
 <body>
 
     <div class="container">
         <div class="row text-center">
-            <div class="col">
-                <img src="logo.png" width="155px" alt="logo">
+            <div class="col mt-5">
+                <img src="logo.png" width="160px" alt="logo">
             </div>
         </div>
         <div class="row justify-content-center">
             <div class="col-lg-5">
-                <div class="card card-lg shadow-style border-0">
+                <div class="card  card-login card-lg shadow-style border-0">
                     <div class="card-body mx-3">
-                        <div class="header d-flex align-items-center ">
-                            <h3>Masuk</h3>
-                            <a class="textLinkGreen text-decoration-none ms-auto fs-log1" href="">Daftar</a>
+                        <div class="header d-flex align-items-center my-4">
+                            <h3 class="fw-bold text-blackToGray">Masuk</h3>
+                            <a class="textLinkGreen text-decoration-none ms-auto fs-log1 letter-login" href="">Daftar</a>
                         </div>
                         <div class="content">
-                            <label for="">Nomor HP atau Email</label>
-                            <input type="text" class="form-control">
-                            <p>Contoh: email@tokopedia.com</p>
-                            <a class="textLinkGreen text-decoration-none ms-auto fs-log1" href="">Butuh bantuan?</a>
-                            <button class="btn btn-primary w-100">Selanjutnya</button>
-                            <div class="text-gray d-flex align-items-baseline lnHR">
+                            <label class="fs-log1 fw-bold letter-login opacity-75" for="">Nomor HP atau Email</label>
+                            <input type="text" class="form-control input-login">
+                            <p class="fs-log1 letter-login mt-1 text-gray">Contoh: email@tokopedia.com</p>
+                            <div class="text-end">
+                                <a class="textLinkGreen text-decoration-none fs-log1 letter-login" href="">Butuh bantuan?</a>
+                            </div>
+                            <button class="btn btn-primary mt-2 w-100 fw-bold button-login py-2 rounded-3">Selanjutnya</button>
+                            <div class="text-gray d-flex align-items-center lnHR mb-1">
                                 <span class="lineHorizontal"></span>
-                                <p class="mx-2 fs-log1 text-center w-50">atau masuk dengan</p>
+                                <p class=" fs-log1 text-center w-50">atau masuk dengan</p>
                                 <span class="lineHorizontal"></span>
                             </div>
+                        </div>
+                        <div class="">
+                            <a class="btn btn-primary w-100 bg-transparent allMethod QR fw-semibold" href=""><img src="qr-code-scan.svg" class="pe-1"> Scan Kode QR</a>
+                            <a class="btn btn-primary w-100 bg-transparent allMethod google fw-semibold mt-2" href=""><img src="qr-code-scan.svg" class="pe-1"> Google</a>
                         </div>
                     </div>
                 </div>
