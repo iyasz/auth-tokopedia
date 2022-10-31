@@ -19,17 +19,11 @@
     <title>Login </title>
 </head>
 
-<style>
-    @media only screen and (min-width: 769px) {
-        body {
-            background-image: url("assets/img/bg.png");
-            background-size: 790px;
-            background-repeat: no-repeat;
-            background-position: center;
-            background-attachment: fixed;
-            background-position-y: 130px;
-        }
-    }
-</style>
-
 <body>
+    <div class="container">
+        <div class="row text-center">
+            <div class="col mt-5">
+                <img src="assets/img/logo.png" width="160px" alt="logo">
+            </div>
+        </div>
+    </div>

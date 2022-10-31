@@ -17,8 +17,16 @@
   color: #31353b;
 }
 
+.mt-6 {
+    margin-top: 200px !important;
+}
+
+.text-gray2 {
+  color: #7b7474 !important; 
+}
+
 .letter-login {
-  letter-spacing: -0.7px;
+  letter-spacing: -0.5px;
 }
 
 .shadow-style {
@@ -34,6 +42,11 @@
   top: -6px;
 }
 
+.offcanvas-login {
+    border-radius: 10px !important;
+    height: 220px !important;
+}
+
 .lnHR {
   justify-content: center;
   margin: 24px 0;
@@ -41,6 +54,14 @@
 
 .fs-log1 {
   font-size: calc(14px + 0.4px);
+}
+
+.fs-log2 {
+    font-size: 12.5px;
+}
+
+.fs-log3 {
+    font-size: 11px;
 }
 
 .text-gray {
