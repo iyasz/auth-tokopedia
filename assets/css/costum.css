@@ -56,7 +56,10 @@
 .button-login {
   background-color: #e5e7e9 !important;
   border: 0;
-  color: #757575 !important;
+  color: #696868 !important;
+  font-family: "OpenSauceOneRegular";
+  font-style: normal;
+  font-size: 15px;
 }
 
 .button-login:hover {
