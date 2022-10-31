@@ -1,7 +1,7 @@
 <?php
 
-$Page = $_GET['page'];
+$page = $_GET['page'];
 
 if ($page == 'login') {
-    include "views/register.php";
+    include "views/auth/login.php";
 }
