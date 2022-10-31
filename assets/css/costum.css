@@ -1,0 +1,117 @@
+@media only screen and (max-width: 768px) {
+  .card-lg {
+    box-shadow: none !important;
+  }
+}
+
+.card-login {
+  position: relative;
+  top: 43px;
+}
+
+.textLinkGreen {
+  color: rgb(3, 154, 14) !important;
+}
+
+.text-blackToGray {
+  color: #31353b;
+}
+
+.letter-login {
+  letter-spacing: -0.7px;
+}
+
+.shadow-style {
+  box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.05) !important;
+}
+
+.lineHorizontal {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  width: 31%;
+  position: relative;
+  top: -6px;
+}
+
+.lnHR {
+  justify-content: center;
+  margin: 24px 0;
+}
+
+.fs-log1 {
+  font-size: calc(14px + 0.4px);
+}
+
+.text-gray {
+  color: rgba(0, 0, 0, 0.45) !important;
+}
+
+.input-login:focus {
+  box-shadow: none;
+  outline: none;
+  border-color: rgb(3, 230, 10);
+}
+
+.button-login {
+  background-color: #e5e7e9 !important;
+  border: 0;
+  color: #757575 !important;
+}
+
+.button-login:hover {
+  cursor: no-drop;
+}
+
+.button-login:active {
+  cursor: no-drop;
+  background-color: #d7d7d7 !important;
+}
+
+.allMethod {
+  border-color: #e5e7e9;
+}
+
+.allMethod:hover {
+  border-color: #e5e7e9;
+}
+
+.allMethod:active {
+  border-color: #d7d7d7 !important;
+}
+
+.QR {
+  color: #757575;
+}
+
+.QR:hover {
+  color: #757575;
+}
+
+.QR:active {
+  color: #757575 !important;
+}
+
+.google {
+  color: #31353b;
+}
+
+.google:hover {
+  color: #31353b;
+}
+
+.google:active {
+  color: #31353b !important;
+}
+
+/* .button-login:active:hover:not([disabled]) {
+        cursor: no-drop;
+    }
+
+    .button-login:hover:disabled {
+        cursor: no-drop;
+    }
+
+    .button-login:active:disabled {
+        background-color: red !important;
+    } */
