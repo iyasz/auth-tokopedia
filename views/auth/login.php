@@ -31,7 +31,23 @@
                         <a class="btn btn-primary w-100 bg-transparent allMethod google fw-semibold mt-2 " href=""><img src="assets/img/googleicon.svg" width="22px" class="pe-1"> Google</a>
                     </div>
                     <div class="d-block d-md-none d-lg-none">
-                        <a class="btn btn-primary letter-login w-100 bg-transparent allMethod QR fw-semibold" href="">Metode Lain</a>
+
+                        <!-- off canvs  -->
+
+                        <button class="btn btn-primary letter-login w-100 bg-transparent allMethod QR fw-semibold" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">Metode Lain</button>
+
+                        <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="offcanvasBottomLabel">Offcanvas bottom</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body small">
+                                ...
+                            </div>
+
+                            <!-- sign up -->
+
+                        </div>
                         <p class="letter-login text-center text-gray fs-log1 mt-2">Belum punya akun? <a href="" class="text-decoration-none textLinkGreen">Daftar</a></p>
                     </div>
                 </div>

@@ -25,11 +25,6 @@
             background-attachment: fixed;
             background-position-y: 130px;
         }
-
-        .card-lg {
-            width: 82%;
-            margin-left: 10%;
-        }
     }
 </style>
 
