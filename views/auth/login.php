@@ -13,7 +13,7 @@
 <div class="container-fluid">
     <div class="row justify-content-center">
         <div class=" col-12 col-md-7 col-lg-4  ">
-            <div class="card  card-login card-lg shadow-style border-0">
+            <div class="card card-login card-lg shadow-style border-0">
                 <div class="card-body mx-3">
                     <div class="header d-flex align-items-center my-4">
                         <h3 class="fw-bold text-blackToGray">Masuk</h3>
