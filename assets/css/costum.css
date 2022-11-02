@@ -88,7 +88,11 @@
 .input-login:focus {
   box-shadow: none;
   outline: none;
-  border-color: rgb(3, 230, 10);
+  border-color: #03e60a;
+}
+
+#validate_reg {
+  height: 18px;
 }
 
 .btn-login {
