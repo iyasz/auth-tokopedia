@@ -22,9 +22,9 @@
                     </div>
                     <div class="">
                         <p class="mb-1 fs-log3 fw-semibold opacity-50 ff-open">Phone Number or Email</p>
-                        <input type="text" class="form-control input-login">
-                        <p class="fs-log2 letter-login mt-1 text-gray fw-semibold">Example: email@tokopedia.com</p>
-                        <button type="submit" class="btn btn-primary mt-2 w-100 letter-login2 fw-bold button-login py-2 rounded-3">Daftar</button>
+                        <input autocomplete="off" id="post_auth" type="text" class="form-control input-login inp-reg">
+                        <p class="fs-log2 mt-1 text-gray " id="validate_reg">Example: email@tokopedia.com</p>
+                        <button id="btn_auth" type="submit" class="btn btn-primary mt-2 w-100 letter-login2 fw-bold btn-login py-2 rounded-3">Daftar</button>
                         <div class="text-center opacity-75 mt-3">
                             <p class="ff-open fs-log2 letter-login">Dengan mendaftar, saya menyetujui <br> <a href="" class="text-decoration-none textLinkGreen">Syarat dan Ketentuan</a> serta <a href="" class="text-decoration-none textLinkGreen">Kebijakan Privasi</a></p>
                         </div>

@@ -82,7 +82,7 @@
 }
 
 .text-gray {
-  color: rgba(0, 0, 0, 0.45) !important;
+  color: rgba(0, 0, 0, 0.45) ;
 }
 
 .input-login:focus {
@@ -91,22 +91,55 @@
   border-color: rgb(3, 230, 10);
 }
 
-.button-login {
-  background-color: #e5e7e9 !important;
+.btn-login {
   border: 0;
-  color: #696868 !important;
   font-family: "OpenSauceOneRegular";
   font-style: normal;
-  font-size: 15px;
+  font-size: 14.4px;
+  background-color: #e5e7e9 ;
+  color: #696868 ;
 }
 
-.button-login:hover {
+.btn-login:hover {
+  color: #696868 !important;
+  background-color: #e5e7e9 !important;
   cursor: no-drop;
 }
 
-.button-login:active {
+.btn-login:active {
   cursor: no-drop;
+  color: #696868 !important;
   background-color: #d7d7d7 !important;
+}
+
+/* .button-login {
+  background-color: #e5e7e9 ;
+  color: #696868 ;
+} */
+
+.button-loginH:hover {
+  /* cursor: pointer; */
+  color: #696868 !important;
+  background-color: #e5e7e9 !important;
+  cursor: no-drop;
+}
+
+.button-loginA:active {
+  /* cursor: pointer; */
+  cursor: no-drop;
+  color: #696868 !important;
+  background-color: #d7d7d7 !important;
+}
+
+.btnLogin-hover:hover {
+  cursor: pointer;
+  color: white !important;
+  background-color: #12883d !important;
+}
+.btnLogin-active:active {
+  cursor: pointer;
+  color: white !important;
+  background-color: #117f39 !important;
 }
 
 .allMethod {

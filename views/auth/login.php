@@ -15,18 +15,19 @@
         <div class=" col-12 col-md-7 col-lg-4  ">
             <div class="card card-login card-lg shadow-style border-0">
                 <div class="card-body mx-3">
+                    <!-- <form action="" method="post"> -->
                     <div class="header d-flex align-items-center my-4">
                         <h3 class="fw-bold text-blackToGray">Masuk</h3>
                         <a class="textLinkGreen text-decoration-none ms-auto fs-log2 letter-login ff-open" href="index.php?page=register">Daftar</a>
                     </div>
                     <div class="content">
                         <label class="fs-log1 fw-bold letter-login opacity-75" for="">Nomor HP atau Email</label>
-                        <input type="text" class="form-control input-login">
+                        <input autocomplete="off" id="post_auth" type="text" class="form-control input-login">
                         <p class="fs-log1 letter-login mt-1 text-gray">Contoh: email@tokopedia.com</p>
                         <div class="text-end">
                             <a class="textLinkGreen text-decoration-none fs-log2 letter-login ff-open" href="">Butuh bantuan?</a>
                         </div>
-                        <button class="btn btn-primary mt-2 w-100 fw-bold button-login py-2 rounded-3">Selanjutnya</button>
+                        <button id="btn_auth" type="submit" class="btn btn-primary mt-2 w-100 fw-bold btn-login py-2 rounded-3">Selanjutnya</button>
                         <div class="text-gray d-flex align-items-center lnHR mb-1">
                             <span class="lineHorizontal"></span>
                             <p class=" fs-log1 text-center w-50 letter-login mx-lg-3 mx-md-0 mx-0">atau masuk dengan</p>
@@ -58,6 +59,7 @@
                         </div>
                         <p class="letter-login text-center text-gray2 fs-log1 mt-2 fs-log2 ff-open">Belum punya akun? &nbsp;<a href="index.php?page=register" class="text-decoration-none textLinkGreen ">Daftar</a></p>
                     </div>
+                    <!-- </form> -->
                 </div>
             </div>
         </div>
