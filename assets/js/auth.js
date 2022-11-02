@@ -1,9 +1,13 @@
 const post_auth = document.getElementById("post_auth");
-const inp_reg = document.getElementsByClassName("inp_reg").value;
+const inp_reg = document.getElementsByClassName("inp_reg");
 const btn_auth = document.getElementById("btn_auth");
 const validate_reg = document.getElementById("validate_reg");
 
 // document.addEventListener('load', function() )
+
+// btn_auth.addEventListener("mouseenter", () => {
+//   btn_auth.style.background = "red";
+// });
 
 post_auth.addEventListener("keyup", () => {
   if (post_auth.value === "") {
@@ -26,9 +30,13 @@ post_auth.addEventListener("keyup", () => {
   // }
 
   post_auth.style.borderColor = "#03e60a";
-  validate_reg.innerHTML = "";
+  validate_reg.innerHTML = "Example: email@tokopedia.com";
+  validate_reg.style.color = "#00000073";
+  btn_auth.removeAttribute("disabled");
+  btn_auth.removeAttribute("disabled");
   btn_auth.style.background = "#03AC0E";
   btn_auth.style.color = "#fff";
+  btn_auth.style.border = "0";
   btn_auth.classList.add("btnLogin-hover");
   btn_auth.classList.add("btnLogin-active");
   return true;

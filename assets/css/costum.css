@@ -30,7 +30,7 @@
 }
 
 .letter-login2 {
-  letter-spacing: 0.5px;
+  letter-spacing: 0.2px;
 }
 .letter-login3 {
   letter-spacing: 0.4px;
@@ -82,7 +82,7 @@
 }
 
 .text-gray {
-  color: rgba(0, 0, 0, 0.45) ;
+  color: #00000073 ;
 }
 
 .input-login:focus {
@@ -95,19 +95,25 @@
   height: 18px;
 }
 
-.btn-login {
+.btn-login:disabled {
   border: 0;
   font-family: "OpenSauceOneRegular";
   font-style: normal;
   font-size: 14.4px;
   background-color: #e5e7e9 ;
-  color: #696868 ;
+  color: rgb(33, 33, 33) ;
+  cursor: not-allowed !important;
 }
 
-.btn-login:hover {
-  color: #696868 !important;
+.btn-login:disabled:hover {
+  color: rgb(204, 11, 11) !important;
   background-color: #e5e7e9 !important;
-  cursor: no-drop;
+  cursor: no-drop !important;
+}
+
+.btn-login::after {
+  background: red !important;
+  pointer-events: none;
 }
 
 .btn-login:active {

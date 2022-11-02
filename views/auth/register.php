@@ -10,25 +10,27 @@
         <div class="col-lg-5 col-md-6 col-sm-12">
             <div class="card card-login shadow-style2 border-0">
                 <div class="card-body mx-4">
-                    <div class="header text-center ">
-                        <h4 class="text-blackToGray mb-1 ff-open  fw-bold">Daftar Sekarang</h4>
-                        <p class="fs-log opacity-75 letter-login ">Sudah punya akun Tokopedia? <a class="text-decoration-none textLinkGreen" href="index.php?page=login">Masuk</a></p>
-                        <a class="btn btn-primary w-100 bg-transparent allMethod google  fw-semibold mt-2 " href=""><img src="assets/img/googleicon.svg" width="18px" class="me-4"> Google</a>
-                    </div>
-                    <div class="text-gray d-flex align-items-center lnHR mb-1">
-                        <span class="lineHorizontal"></span>
-                        <p class="fw-semibold text-center w-50 ff-open fs-log2 letter-login mx-lg-3 mx-md-0 mx-0">atau masuk dengan</p>
-                        <span class="lineHorizontal"></span>
-                    </div>
-                    <div class="">
-                        <p class="mb-1 fs-log3 fw-semibold opacity-50 ff-open">Phone Number or Email</p>
-                        <input autocomplete="off" id="post_auth" type="text" class="form-control input-login inp_reg">
-                        <p class="fs-log2 mt-1 text-gray " id="validate_reg">Example: email@tokopedia.com</p>
-                        <button id="btn_auth" type="submit" class="btn btn-primary w-100 letter-login2 fw-bold btn-login py-2 rounded-3">Daftar</button>
-                        <div class="text-center opacity-75 mt-3">
-                            <p class="ff-open fs-log2 letter-login">Dengan mendaftar, saya menyetujui <br> <a href="" class="text-decoration-none textLinkGreen">Syarat dan Ketentuan</a> serta <a href="" class="text-decoration-none textLinkGreen">Kebijakan Privasi</a></p>
+                    <form action="" method="post">
+                        <div class="header text-center ">
+                            <h4 class="text-blackToGray mb-1 ff-open  fw-bold">Daftar Sekarang</h4>
+                            <p class="fs-log opacity-75 letter-login ">Sudah punya akun Tokopedia? <a class="text-decoration-none textLinkGreen" href="index.php?page=login">Masuk</a></p>
+                            <a class="btn btn-primary w-100 bg-transparent allMethod google  fw-semibold mt-2 " href=""><img src="assets/img/googleicon.svg" width="18px" class="me-4"> Google</a>
                         </div>
-                    </div>
+                        <div class="text-gray d-flex align-items-center lnHR mb-1">
+                            <span class="lineHorizontal"></span>
+                            <p class="fw-semibold text-center w-50 ff-open fs-log2 letter-login mx-lg-3 mx-md-0 mx-0">atau masuk dengan</p>
+                            <span class="lineHorizontal"></span>
+                        </div>
+                        <div class="">
+                            <p class="mb-1 fs-log3 fw-semibold opacity-50 ff-open">Phone Number or Email</p>
+                            <input autocomplete="off" id="post_auth" type="text" class="form-control input-login inp_reg">
+                            <p class="fs-log2 mt-1 text-gray " id="validate_reg">Example: email@tokopedia.com</p>
+                            <button id="btn_auth" disabled type="submit" class="btn btn-primary w-100 letter-login2 fw-bold btn-login py-2 rounded-3">Daftar</button>
+                            <div class="text-center opacity-75 mt-3">
+                                <p class="ff-open fs-log2 letter-login">Dengan mendaftar, saya menyetujui <br> <a href="" class="text-decoration-none textLinkGreen">Syarat dan Ketentuan</a> serta <a href="" class="text-decoration-none textLinkGreen">Kebijakan Privasi</a></p>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
