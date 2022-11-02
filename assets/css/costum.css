@@ -10,7 +10,7 @@
 }
 
 .textLinkGreen {
-  color: rgb(3, 154, 14) !important;
+  color: rgb(3, 124, 14) !important;
 }
 
 .text-blackToGray {
@@ -29,10 +29,23 @@
   letter-spacing: -0.5px;
 }
 
+.letter-login2 {
+  letter-spacing: 0.5px;
+}
+.letter-login3 {
+  letter-spacing: 0.4px;
+}
+
 .shadow-style {
   box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.05);
   -webkit-box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.05);
   -moz-box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.05) !important;
+}
+
+.shadow-style2 {
+  box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.11);
+  -webkit-box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.11);
+  -moz-box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.11) !important;
 }
 
 .lineHorizontal {
@@ -50,6 +63,10 @@
 .lnHR {
   justify-content: center;
   margin: 24px 0;
+}
+
+.fs-log {
+  font-size: 16.1px;
 }
 
 .fs-log1 {
