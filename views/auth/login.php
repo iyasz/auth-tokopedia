@@ -22,12 +22,14 @@
                         </div>
                         <div class="content">
                             <label class="fs-log1 fw-bold letter-login opacity-75" for="">Nomor HP atau Email</label>
-                            <input autocomplete="off" id="post_auth" type="text" class="form-control input-login">
-                            <p class="fs-log1 letter-login mt-1 text-gray">Contoh: email@tokopedia.com</p>
+                            <input id="post_auth" autocomplete="off" type="text" class="form-control input-login">
+                            <p id="validate_reg" class="fs-log1 letter-login mt-1 text-gray">Contoh: email@tokopedia.com</p>
                             <div class="text-end">
                                 <a class="textLinkGreen text-decoration-none fs-log2 letter-login ff-open" href="">Butuh bantuan?</a>
                             </div>
-                            <button id="btn_auth" disabled type="submit" class="btn btn-primary mt-2 w-100 fw-bold btn-login py-2 rounded-3">Selanjutnya</button>
+
+                            <button id="btn_auth" disabled type="submit" class="btn btn-primary mt-2 tr w-100 fw-bold btn-login py-2 rounded-3">Selanjutnya</button>
+
                             <div class="text-gray d-flex align-items-center lnHR mb-1">
                                 <span class="lineHorizontal"></span>
                                 <p class=" fs-log1 text-center w-50 letter-login mx-lg-3 mx-md-0 mx-0">atau masuk dengan</p>
@@ -42,7 +44,7 @@
 
                             <!-- off canvs  -->
 
-                            <button class="btn btn-primary letter-login w-100 bg-transparent allMethod QR fw-semibold" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">Metode Lain</button>
+                            <a class="btn btn-primary letter-login w-100 bg-transparent allMethod QR fw-semibold" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">Metode Lain</a>
 
                             <div class="offcanvas offcanvas-login offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
                                 <div class="offcanvas-header">

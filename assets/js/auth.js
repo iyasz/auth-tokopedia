@@ -3,6 +3,7 @@ const inp_reg = document.getElementsByClassName("inp_reg");
 const btn_auth = document.getElementById("btn_auth");
 const validate_reg = document.getElementById("validate_reg");
 
+let olds = [];
 // document.addEventListener('load', function() )
 
 // btn_auth.addEventListener("mouseenter", () => {
@@ -10,8 +11,18 @@ const validate_reg = document.getElementById("validate_reg");
 // });
 
 post_auth.addEventListener("keyup", () => {
-  if (post_auth.value === "") {
+  if (post_auth.value == "") {
     validate_reg.innerHTML = "Nomor Ponsel atau Email harus diisi";
+    validate_reg.style.color = "red";
+    post_auth.style.borderColor = "red";
+    btn_auth.style.background = "#e5e7e9";
+    btn_auth.style.color = "#212121";
+    btn_auth.classList.add("button-loginH");
+    btn_auth.classList.add("button-loginA");
+    btn_auth.classList.remove("btnLogin-hover");
+    btn_auth.classList.remove("btnLogin-active");
+    btn_auth.disabled = true;
+    btn_auth.setAttribute("disabled");
     return false;
   } else if (!post_auth.value.match(/^[A-Za-z\._\-0-9]*[@][A-Za-z]*[\.][a-z]{2,7}$/)) {
     validate_reg.innerHTML = "Format email salah";
@@ -23,6 +34,8 @@ post_auth.addEventListener("keyup", () => {
     btn_auth.classList.add("button-loginA");
     btn_auth.classList.remove("btnLogin-hover");
     btn_auth.classList.remove("btnLogin-active");
+    btn_auth.disabled = true;
+    btn_auth.setAttribute("disabled");
     return false;
   }
 
@@ -32,7 +45,7 @@ post_auth.addEventListener("keyup", () => {
   post_auth.style.borderColor = "#03e60a";
   validate_reg.innerHTML = "Example: email@tokopedia.com";
   validate_reg.style.color = "#00000073";
-  btn_auth.removeAttribute("disabled");
+  btn_auth.disabled = false;
   btn_auth.removeAttribute("disabled");
   btn_auth.style.background = "#03AC0E";
   btn_auth.style.color = "#fff";

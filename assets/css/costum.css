@@ -18,11 +18,11 @@
 }
 
 .mt-6 {
-    margin-top: 200px !important;
+  margin-top: 200px !important;
 }
 
 .text-gray2 {
-  color: #7b7474 !important; 
+  color: #7b7474 !important;
 }
 
 .letter-login {
@@ -56,8 +56,8 @@
 }
 
 .offcanvas-login {
-    border-radius: 10px !important;
-    height: 220px !important;
+  border-radius: 10px !important;
+  height: 220px !important;
 }
 
 .lnHR {
@@ -74,15 +74,15 @@
 }
 
 .fs-log2 {
-    font-size: 12.5px;
+  font-size: 12.5px;
 }
 
 .fs-log3 {
-    font-size: 11px;
+  font-size: 11px;
 }
 
 .text-gray {
-  color: #00000073 ;
+  color: #00000073;
 }
 
 .input-login:focus {
@@ -96,25 +96,35 @@
 }
 
 .btn-login:disabled {
+  pointer-events: visible !important;
   border: 0;
   font-family: "OpenSauceOneRegular";
   font-style: normal;
   font-size: 14.4px;
-  background-color: #e5e7e9 ;
-  color: rgb(33, 33, 33) ;
+  background-color: #dedede;
+  color: #1b1b1b;
+}
+
+#btn_auth:disabled:hover {
+  color: #1b1b1b !important;
+  background-color: #dedede !important;
+  cursor: not-allowed !important;
+
+}
+
+#btn_auth:disabled:active {
+  background: #cacacb !important;
+  pointer-events: none;
   cursor: not-allowed !important;
 }
 
-.btn-login:disabled:hover {
+/* .btn-login:disabled:hover,
+.btn-login[disabled][hover] {
   color: rgb(204, 11, 11) !important;
   background-color: #e5e7e9 !important;
-  cursor: no-drop !important;
-}
+  cursor: not-allowed !important;
+} */
 
-.btn-login::after {
-  background: red !important;
-  pointer-events: none;
-}
 
 .btn-login:active {
   cursor: no-drop;
