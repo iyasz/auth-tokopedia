@@ -1,3 +1,13 @@
+<?php
+
+if (isset($_POST['btn_login'])) {
+    $username = htmlspecialchars($_POST['input_username']);
+}
+
+
+
+?>
+
 <style>
     @media only screen and (min-width: 769px) {
         body {
@@ -22,13 +32,13 @@
                         </div>
                         <div class="content">
                             <label class="fs-log1 fw-bold letter-login opacity-75" for="">Nomor HP atau Email</label>
-                            <input id="post_auth" autocomplete="off" type="text" class="form-control input-login">
+                            <input name="input_username" id="post_auth" autocomplete="off" type="text" class="form-control input-login">
                             <p id="validate_reg" class="fs-log1 letter-login mt-1 text-gray">Contoh: email@tokopedia.com</p>
                             <div class="text-end">
                                 <a class="textLinkGreen text-decoration-none fs-log2 letter-login ff-open" href="">Butuh bantuan?</a>
                             </div>
 
-                            <button id="btn_auth" disabled type="submit" class="btn btn-primary mt-2 tr w-100 fw-bold btn-login py-2 rounded-3">Selanjutnya</button>
+                            <button class="btn_login" id="btn_auth" disabled type="submit" class="btn btn-primary mt-2 tr w-100 fw-bold btn-login py-2 rounded-3">Selanjutnya</button>
 
                             <div class="text-gray d-flex align-items-center lnHR mb-1">
                                 <span class="lineHorizontal"></span>
