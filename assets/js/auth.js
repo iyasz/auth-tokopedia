@@ -54,22 +54,8 @@ post_auth.addEventListener("keyup", () => {
   btn_auth.classList.add("btnLogin-active");
   return true;
   //   btn_auth.classList.remove("btnLogin-hover");
-
-  //   if (btn_auth.classList.contains("btnLogin-hover")) {
-  //     btn_auth.classList.remove("btnLogin-active");
-  //   }
-
-  // .myCustomHover:hover {
-  //      color:red;
-  // }
-  // .myCustomActive:active {
-  //     background:yellow;
-  // }
-
-  // var myDiv = document.getElementById('myDiv');
-  // myDiv.classList.add('myCustomHover');
-  // myDiv.classList.toogle('myCustomActive');
-  // myDiv.classList.remove('myCustomHover');
-  // if (myDiv.classList.contains('myCustomActive') myDiv.classList.remove('myCustomActive');
-  // /* ... and so on */</script>
 });
+
+// btn_auth.addEventListener("click", () => {
+//   document.querySelector(".popup").style.display = "flex";
+// });

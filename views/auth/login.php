@@ -1,10 +1,18 @@
 <?php
 
+$set = [];
+
 if (isset($_POST['btn_login'])) {
     $username = htmlspecialchars($_POST['input_username']);
+
+    $select_username = $conn->query("SELECT * FROM admin WHERE username = '$username'")->num_rows;
+
+    if ($select_username < 1) {
+        $set['daftar'] = $username;
+    } else {
+        echo "anime";
+    }
 }
-
-
 
 ?>
 
@@ -20,6 +28,7 @@ if (isset($_POST['btn_login'])) {
         }
     }
 </style>
+
 <div class="container-fluid">
     <div class="row justify-content-center">
         <div class=" col-12 col-md-7 col-lg-4  ">
@@ -38,7 +47,7 @@ if (isset($_POST['btn_login'])) {
                                 <a class="textLinkGreen text-decoration-none fs-log2 letter-login ff-open" href="">Butuh bantuan?</a>
                             </div>
 
-                            <button class="btn_login" id="btn_auth" disabled type="submit" class="btn btn-primary mt-2 tr w-100 fw-bold btn-login py-2 rounded-3">Selanjutnya</button>
+                            <button name="btn_login" id="btn_auth" disabled type="submit" class="btn btn-primary mt-2 tr w-100 fw-bold btn-login py-2 rounded-3">Selanjutnya</button>
 
                             <div class="text-gray d-flex align-items-center lnHR mb-1">
                                 <span class="lineHorizontal"></span>
@@ -77,6 +86,19 @@ if (isset($_POST['btn_login'])) {
         </div>
     </div>
 </div>
+
+<div class="popup  <?= isset($set['daftar']) ? 'd-flex position-fixed ' : '' ?>">
+    <div class="popup-content animate__animated animate__pulse">
+        <h4 class="ff-open fw-bolder mt-2">Email belum terdaftar</h4>
+        <p class="ff-open QR mb-1 mt-2">Lanjut daftar dengan email ini</p>
+        <h5 class="ff-open fs-log1 opacity-75"><strong class="fw-bolder"><?= $username ?? ''; ?></strong></h5>
+        <div class="mt-4 d-flex justify-content-center">
+            <button class="btn btn-primary px-5">Ubah</button>
+            <button class="btn btn-primary px-5">Ya, Daftar</button>
+        </div>
+    </div>
+</div>
+
 <div class="container mt-6">
     <div class="row text-center">
         <div class="col-lg-12 col-md-4 d-lg-block d-md-block d-sm-none ">
