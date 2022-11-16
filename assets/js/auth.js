@@ -12,6 +12,7 @@ let olds = [];
 
 post_auth.addEventListener("keyup", () => {
   if (post_auth.value == "") {
+    olds.push("Nomor Ponsel atau Email harus diisi");
     validate_reg.innerHTML = "Nomor Ponsel atau Email harus diisi";
     validate_reg.style.color = "red";
     post_auth.style.borderColor = "red";
@@ -25,6 +26,7 @@ post_auth.addEventListener("keyup", () => {
     btn_auth.setAttribute("disabled");
     return false;
   } else if (!post_auth.value.match(/^[A-Za-z\._\-0-9]*[@][A-Za-z]*[\.][a-z]{2,7}$/)) {
+    olds.push("Format email salah");
     validate_reg.innerHTML = "Format email salah";
     validate_reg.style.color = "red";
     post_auth.style.borderColor = "red";
@@ -41,6 +43,8 @@ post_auth.addEventListener("keyup", () => {
 
   // if (!post_auth.value.match(/^[A-Za-z\._\-0-9]*[@][A-Za-z]*[\.][a-z]{2,7}$/)) {
   // }
+
+  // if()
 
   post_auth.style.borderColor = "#03e60a";
   validate_reg.innerHTML = "Example: email@tokopedia.com";

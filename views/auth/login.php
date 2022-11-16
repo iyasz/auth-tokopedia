@@ -41,7 +41,7 @@ if (isset($_POST['btn_login'])) {
                         </div>
                         <div class="content">
                             <label class="fs-log1 fw-bold letter-login opacity-75" for="">Nomor HP atau Email</label>
-                            <input name="input_username" id="post_auth" autocomplete="off" type="text" class="form-control input-login">
+                            <input autocomplete="off" name="input_username" id="post_auth" autocomplete="off" type="text" class="form-control input-login">
                             <p id="validate_reg" class="fs-log1 letter-login mt-1 text-gray">Contoh: email@tokopedia.com</p>
                             <div class="text-end">
                                 <a class="textLinkGreen text-decoration-none fs-log2 letter-login ff-open" href="">Butuh bantuan?</a>
@@ -81,6 +81,28 @@ if (isset($_POST['btn_login'])) {
                             <p class="letter-login text-center text-gray2 fs-log1 mt-2 fs-log2 ff-open">Belum punya akun? &nbsp;<a href="index.php?page=register" class="text-decoration-none textLinkGreen ">Daftar</a></p>
                         </div>
                     </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#loginModal">
+    Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="false">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body text-center">
+                <h4 class="ff-open fw-bolder mt-2">Email belum terdaftar</h4>
+                <p class="ff-open QR mb-1 mt-2">Lanjut daftar dengan email ini</p>
+                <h5 class="ff-open fs-log1 opacity-75"><strong class="fw-bolder"><?= $username ?? ''; ?></strong></h5>
+                <div class="mt-4 d-flex justify-content-center">
+                    <button class="btn btn-primary px-5">Ubah</button>
+                    <button class="btn btn-primary px-5">Ya, Daftar</button>
                 </div>
             </div>
         </div>

@@ -24,10 +24,10 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="container d-none d-md-block d-lg-block">
         <div class="row text-center">
             <div class="col mt-5">
-                <img src="assets/img/logo.png" width="160px" alt="logo">
+                <img class=" " src="assets/img/logo.png" width="160px" alt="logo">
             </div>
         </div>
     </div>
