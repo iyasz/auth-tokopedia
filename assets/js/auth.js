@@ -51,6 +51,8 @@ post_auth.addEventListener("keyup", () => {
   validate_reg.style.color = "#00000073";
   btn_auth.disabled = false;
   btn_auth.removeAttribute("disabled");
+  // delete olds[0];
+  // delete olds[1];
   btn_auth.style.background = "#03AC0E";
   btn_auth.style.color = "#fff";
   btn_auth.style.border = "0";
@@ -59,6 +61,10 @@ post_auth.addEventListener("keyup", () => {
   return true;
   //   btn_auth.classList.remove("btnLogin-hover");
 });
+
+// if (olds.length === 0) {
+//   location.replace("index.php?page=home");
+// }
 
 // btn_auth.addEventListener("click", () => {
 //   document.querySelector(".popup").style.display = "flex";

@@ -1,6 +1,23 @@
 <?php
 
 // include "app/sendmail.php";
+$olds = [];
+
+if (isset($_POST['daftar'])) {
+    $input_register = $_POST['post_register'];
+
+    if (empty($input_register)) {
+        $olds['register'] = "Nomor Ponsel atau Email harus diisi";
+        echo "<script>alert('NGAPAIN DEK')</script>";
+        echo "<script>validate_reg.innerHTML = 'Nomor Ponsel atau Email harus diisi';</script>";
+        echo "<script>location.replace('index.php?page=register')</script>";
+    }
+
+    if (empty($olds)) {
+
+        echo "<script>location.replace('index.php?page=home')</script>";
+    }
+}
 
 
 // $errs = [];
@@ -84,7 +101,7 @@
                         </div>
                         <div class="">
                             <p class="mb-1 fs-log3 fw-semibold opacity-50 ff-open">Phone Number or Email</p>
-                            <input autocomplete="off" id="post_auth" type="text" class="form-control input-login inp_reg">
+                            <input autocomplete="off" name="post_register" id="post_auth" type="text" class="form-control input-login inp_reg">
                             <p class="fs-log2 mt-1 text-gray " id="validate_reg">Example: email@tokopedia.com</p>
 
                             <button id="btn_auth" disabled="disabled" name="daftar" type="submit" class="btn btn-primary w-100 letter-login2 fw-bold btn-login py-2 rounded-3">Daftar</button>
